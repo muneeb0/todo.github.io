@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src='todoList.js'></script>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 50px;
+            font-weight: bolder;
+        }
+        #box{
+            width: 800px;
+            height: 500px;
+            background-color: floralwhite;
+            margin: 0 auto;
+            border: grey solid 1px;
+        }
+        #item{  
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+        #add{
+            display: inline;
+            margin-top: 20px;
+        }
+        #Edit{
+            display: inline;
+            margin-top: 20px;
+        }
+        #Delete{
+            display: inline;
+            margin-top: 20px;
+        }
+        
+        ul li {
+            list-style: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>TODO LIST</h1>
+    <div id="box">
+        
+        <input type="text" class=" form form-control"  style="width: 40%; float: left;" id="item" placeholder="Enter Any Activity"/>        
+        <button id="add" class=" form btn btn-danger" onclick="insertElement()" style="background-color: grey; border: honeydew solid 1px;">Add</button>
+        <button id="Edit" class="btn btn-danger" onclick="Edit()" style="background-color: grey; border: honeydew solid 1px;">Edit</button>
+        <button id="Delete" class="btn btn-danger" onclick="Delete()" >Delete</button>
+        <p></p> 
+        
+<ul id="myUL" onclick="select()">
+    <li >Hit the gym</li>
+    <li >Pay bills</li>
+    <li>Meet George</li>
+    <li>Buy eggs</li>
+    <li>Read a book</li>
+    <li>Organize office</li>
+  </ul> 
+</div>
+</body>
+</html>
